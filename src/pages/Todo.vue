@@ -19,12 +19,10 @@
             v-model="task.done"
             />
         </q-item-section>
-
         <q-item-section>
           <q-item-label>{{ task.title }}</q-item-label>
           <q-item-label caption>{{ task.timeStamp }}</q-item-label>
         </q-item-section>
-
         <q-item-section
           v-if="task.done"
           side
@@ -37,7 +35,6 @@
             color="red"
             icon="delete" />
         </q-item-section>
-
       </q-item>
     </q-list>
     <div

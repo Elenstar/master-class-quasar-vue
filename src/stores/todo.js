@@ -13,7 +13,7 @@ export const useTodoStore = defineStore('todo', {
         this.tasks.push({
           title: this.newTask,
           done: false,
-          timeStamp: date.formatDate(Date.now(), 'DD.MM.YYYY HH:ss') //дополнительное поле, если останется время
+          timeStamp: date.formatDate(Date.now(), 'DD.MM.YYYY HH:ss')
         })
         this.newTask = ''
       }
