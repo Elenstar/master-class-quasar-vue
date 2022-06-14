@@ -66,6 +66,6 @@ const storeTasks = useTodoStore()
     }
   }
   .no-task {
-    opacity: 0.5
+    opacity: 0.5;
   }
 </style>

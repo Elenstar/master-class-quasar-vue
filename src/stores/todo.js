@@ -9,7 +9,7 @@ export const useTodoStore = defineStore('todo', {
 
   actions: {
     addTask() {
-      if (this.newTask != '') {
+      if (this.newTask !=='') {
         this.tasks.push({
           title: this.newTask,
           done: false,
@@ -18,12 +18,10 @@ export const useTodoStore = defineStore('todo', {
         this.newTask = ''
       }
     },
-
     deleteTask(index) {
       Dialog.create({
         title: 'Предупреждение',
         message: 'Вы действительно хотите удалить выбранную позицию?',
-        cancel: true,
         persistent: true,
         ok: {
           label: 'Удалить'
